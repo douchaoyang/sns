@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>pc分享插件</title>
+<link rel="stylesheet" type="text/css" href="reset.pc.css">
+<style type="text/css">
+body {
+	height: 2000px;
+	background-color: #292929;
+}
+#test {
+	margin: 200px 0 0 200px;
+}
+</style>
+</head>
+<body> 
+<div id="test">
+
+</div>
+<script type="text/javascript" src="http://pic.youzu.com/common/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://pic.youzu.com/common/before_js/sns/pc/yzsns.js"></script>
+<script type="text/javascript">
+yzsns.set({
+	url: 'http://hd.youzu.com/kb/pig/index',
+	title: '我在领取《狂暴之翼》金猪，点击助我赢官方限定手办！',
+	desc: '超多新春免费领取，每日抽转盘，100%中奖！',
+	pic: 'http://pic.youzu.com/hd/kb/pig/images/share-icon.png'
+}).init({
+	box: $("#test")[0],
+	bgcolor: "#fff",
+	color: "#f6e5a2",
+	list: "wx,sina,qzone,qq,tieba"
+});
+</script>
+</body>
+</html>
